@@ -11,3 +11,26 @@
     padding: 10px 24px;
     border: none;
 }
+.inner{
+    overflow: hidden;
+}
+.inner img{
+    transition: 1.5s ease;
+}
+.inner:hover img{
+    transform :scale(1.2);
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .inner{
+        overflow: hidden;
+    }
+    .inner img{
+        transition: 1.5s ease-in-out;
+    }
+    .inner:hover img{
+        transform :scale(1.2);
+    }    
+}
